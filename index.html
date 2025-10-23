@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iVilla</title>
+    <link rel="icon" type="image/png" href="Imagens/logoTitulo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/tooplate-stellaris-style.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <img src="Imagens/logo.png" alt="logo">
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span> 
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <a href="https://www.instagram.com/ivilla_tec/" target="_blank" rel="noopener">
+                    <img src="Imagens/instagram.png" alt="instagram" style="width: 50px; height:auto;"></a>
+                    <a href="https://wa.me/5522998843837" target="_blank" rel="noopener">
+                    <img src="Imagens/whatsapp.png" alt="WhatsApp" style="width:50px; height:auto;"> </a>
+                    <a href="https://wa.me/5522998843837" target="_blank" rel="noopener">FALE CONOSCO </a>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <!-- Star layers -->
+    <div class="stars-layer"></div>
+    
+    <!-- Floating space orbs -->
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    
+    <!-- Shooting stars -->
+    <div class="shooting-star" style="--delay: 0s; --top: 10%; --left: 10%;"></div>
+    <div class="shooting-star" style="--delay: 1.5s; --top: 30%; --left: 60%;"></div>
+    <div class="shooting-star" style="--delay: 3s; --top: 20%; --left: 80%;"></div>
+    <div class="shooting-star" style="--delay: 4.5s; --top: 60%; --left: 30%;"></div>
+    <div class="shooting-star" style="--delay: 6s; --top: 80%; --left: 70%;"></div>
+    
+    <div class="hero-content">
+        <h1 class="cosmic-title">Soluções completas em  tecnologia</h1>
+        <p class="subtitle">Assistência em celulares • Manutenção de computadores • Redes & infraestrutura</p>
+    </div>
+    <a href="#about" class="scroll-btn">
+        <div class="scroll-btn-inner">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+        </div>
+    </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+        <div class="about-section">
+            <div class="about-hero">
+                <h3>Tecnologia, confiança e soluções</h3>
+                <p class="about-description">
+                    Na <strong>iVilla</strong>, unimos experiência e inovação para cuidar da sua tecnologia de ponta a ponta.
+                    Atuamos com <strong>assistência técnica de celulares</strong>, <strong>montagem e manutenção de computadores</strong>, 
+                    além de <strong>instalações de rede e infraestrutura</strong> para residências e empresas.<br>
+                    Com atendimento ágil, peças de qualidade e compromisso com cada cliente, 
+                    garantimos soluções confiáveis que mantêm você sempre conectado.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="about-card-icon">📱</span>
+                    <h4>Assistência Técnica Celulares</h4>
+                    <p>Troca de telas, baterias, conectores, câmeras e outros reparos com peças de qualidade e garantia. 
+                    Atendimento rápido, transparente e com opção de <strong>coleta e entrega em Saquarema e Região dos Lagos</strong>.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">💻</span>
+                    <h4>Manutenção de computadores</h4>
+                    <p>Montagem de PCs personalizados, upgrades, formatação, limpeza e manutenção completa de desktops e notebooks. 
+                    Ideal para quem busca <strong>melhor desempenho e confiabilidade</strong> no dia a dia ou no trabalho.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">🌐</span>
+                    <h4>Redes e Infraestrutura</h4>
+                    <p>Planejamento, instalação e configuração de redes cabeadas e Wi-Fi. 
+                    Oferecemos soluções para <strong>residências e empresas</strong>, garantindo estabilidade, alcance e segurança na conexão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="section-title">NOSSOS DIFERENCIAIS</h2>
+
+    <section id="diferenciais" class="missions-section fade-in">
+    <div class="missions-container">
+        <div class="mission-tabs">
+        <button class="mission-tab active" data-tab="porqueeivilla">Por que a iVilla?</button>
+        <button class="mission-tab" data-tab="processo">Como trabalhamos</button>
+        <button class="mission-tab" data-tab="qualidade">Qualidade & Garantia</button>
+        <button class="mission-tab" data-tab="cobertura">Cobertura & Contato</button>
+        </div>
+
+        <!-- TAB 1 -->
+        <div class="mission-content active" id="porqueeivilla">
+        <div class="mission-grid">
+            <div class="mission-card">
+            <h4>Atendimento Ágil</h4>
+            <p>Diagnóstico rápido e reparos no mesmo dia quando possível. Priorizamos urgências e mantemos você informado a cada etapa.</p>
+            <span class="mission-status">Rápido</span>
+            </div>
+            <div class="mission-card">
+            <h4>Transparência Total</h4>
+            <p>Orçamento claro antes de qualquer serviço, sem taxas escondidas. Você aprova tudo pelo WhatsApp, ou em nossa loja.</p>
+            <span class="mission-status">Sem Surpresas</span>
+            </div>
+            <div class="mission-card">
+            <h4>Coleta e Entrega</h4>
+            <p>Além do atendimento na loja, nós buscamos e devolvemos seu aparelho. Atendemos Saquarema e toda a Região dos Lagos.</p>
+            <span class="mission-status">Região dos Lagos</span>
+            </div>
+        </div>
+        </div>
+
+        <!-- TAB 2 -->
+        <div class="mission-content" id="processo">
+        <div class="mission-grid">
+            <div class="mission-card">
+            <h4>Diagnóstico Profissional</h4>
+            <p>Checklists, testes antes/depois e laudo simples. Identificamos causa raiz para evitar retrabalho.</p>
+            <span class="mission-status">Método</span>
+            </div>
+            <div class="mission-card">
+            <h4>Peças de Qualidade</h4>
+            <p>Utilizamos peças premium (e originais quando disponíveis), sempre informando as opções e prazos.</p>
+            <span class="mission-status">Garantia</span>
+            </div>
+            <div class="mission-card">
+            <h4>Entrega Validada</h4>
+            <p>Testes finais de desempenho, limpeza e calibração. Você confere tudo no ato da entrega.</p>
+            <span class="mission-status">Qualidade</span>
+            </div>
+        </div>
+        </div>
+
+        <!-- TAB 3 -->
+        <div class="mission-content" id="qualidade">
+        <div class="mission-grid">
+            <div class="mission-card">
+            <h4>Garantia Real</h4>
+            <p>Garantia em serviços e peças conforme cada caso (mín. 90 dias para serviços). Termos claros e objetivos.</p>
+            <span class="mission-status">Protegido</span>
+            </div>
+            <div class="mission-card">
+            <h4>Segurança de Dados</h4>
+            <p>Tratamos seus dados com cuidado: backup opcional, sigilo e práticas alinhadas à LGPD.</p>
+            <span class="mission-status">Seguro</span>
+            </div>
+            <div class="mission-card">
+            <h4>Pós-Atendimento</h4>
+            <p>Suporte pelo WhatsApp após a entrega e acompanhamento do serviço para garantir sua satisfação.</p>
+            <span class="mission-status">Suporte</span>
+            </div>
+        </div>
+        </div>
+
+        <!-- TAB 4 -->
+        <div class="mission-content" id="cobertura">
+        <div class="mission-grid">
+            <div class="mission-card">
+            <h4>Onde Atuamos</h4>
+            <p>Oficina em Saquarema e atendimento com coleta/entrega na Região dos Lagos.</p>
+            <span class="mission-status">Local</span>
+            </div>
+            <div class="mission-card">
+            <h4>Canais de Contato</h4>
+            <p>WhatsApp <a href="https://wa.me/5522998843837" target="_blank" rel="noopener">22 99884-3837</a><br>
+                Instagram <a href="https://www.instagram.com/ivilla_tec/" target="_blank">@ivilla_tec</a><br>
+                E-mail: contato@ivilla.com.br <br>
+                Rua Oito de Setembro, 263 Porto da Roça - Saquarema/RJ
+                </p>
+            <span class="mission-status" href="https://wa.me/5522998843837" target="_blank" rel="noopener">WhatsApp</span>
+
+            </div>
+            <div class="mission-card">
+            <h4>Pagamento Fácil</h4>
+            <p>Pix, débito e crédito. Nota fiscal disponível para pessoa física e jurídica.</p>
+            <span class="mission-status">Facilitado</span>
+            </div>
+        </div>
+        </div>
+
+        <!-- CTA opcional ao final da seção -->
+        <div class="mission-cta" style="text-align:center;margin-top:28px;">
+        <a class="mission-status" href="https://wa.me/5522998843837" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+    </div>
+    </section>
+
+    <section id="equipment" class="fade-in gallery">
+    <h2 class="section-title">GALERIA DE SERVIÇOS</h2>
+    <div class="equipment-container">
+        
+        <div class="equipment-item">
+            <img src="Imagens/at.png" alt="Troca de tela de celular">
+            <span>Reparo de celulares</span>
+        </div>
+
+        <div class="equipment-item">
+            <img src="Imagens/manutencao.png" alt="Manutenção de computador">
+            <span>Montagem e Limpeza de PC</span>
+        </div>
+
+        <div class="equipment-item">
+            <img src="Imagens/redes.png" alt="Instalação de rede">
+            <span>Instalação de Redes</span>
+        </div>
+
+    </div>
+    </section>
+   
+    <section id="contato" class="fade-in contact">
+        <h2 class="section-title">LOCALIZAÇÃO & CONTATO</h2>
+        <div class="contact-wrap">
+            <!-- MAPA -->
+            <div class="contact-card contact-map" aria-label="Mapa iVilla em Saquarema">
+            <!-- Troque o src por outro endereço se quiser apontar para um local específico -->
+            <iframe
+                title="Mapa - iVilla Saquarema"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.301809811577!2d-42.4825465239027!3d-22.90223623770995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x975e0e6058b91d%3A0x506c141ac0abd036!2sR.%20Oito%20de%20Setembro%2C%20263%20-%20Porto%20da%20Ro%C3%A7a%20II%2C%20Saquarema%20-%20RJ%2C%2028990-000!5e0!3m2!1spt-BR!2sbr!4v1760657312266!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+
+            <!-- CONTATOS -->
+            <div class="contact-card contact-info">
+                <ul class="contact-list">
+                    <li>
+                    <span class="ico">📍</span>
+                    <div>
+                        <strong>Rua 8 de Setembro, 263 Saquarema/RJ</strong><br><small>Coleta e entrega na Região dos Lagos</small>
+                        <br><small>Atendimento Agendado</small>
+                    </div>
+                    </li>
+                    <li>
+                    <span class="ico">📞</span>
+                    <a href="tel:+5522998843837" aria-label="Ligar para iVilla">(22) 99884-3837</a>
+                    </li>
+                    <li>
+                    <span class="ico">💬</span>
+                    <a href="https://wa.me/5522998843837" target="_blank" rel="noopener"
+                        aria-label="Abrir conversa no WhatsApp">WhatsApp: Abrir conversa</a>
+                    </li>   
+                    <li>
+                    <span class="ico">✉️</span>
+                    <a href="mailto:atendimento@ivilla.com.br" aria-label="Enviar e-mail para iVilla">contato@ivilla.com.br</a>
+                    </li>
+                </ul>
+                <div class="contact-cta">
+                    <a class="btn-primary" href="https://wa.me/5522998843837" target="_blank" rel="noopener">
+                    Chamar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>    
+        <div class="footer-rules">
+            <a href="rules.html" target="_blank" rel="noopener"><h3>Regras e Regulamentos</h3></a>                       
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;2024 . 58.279.849/0001-26 . CAFA COMERCIO E SERVICOS EM TECNOLOGIA DA INFORMACAO LTDA <br>
+                Design: <a href="https://www.linkedin.com/in/cathemoraes/" target="_blank" rel="noopener nofollow">Catherine Moraes</a>
+            </p>
+        </div>
+    </footer>
+<script src="js/tooplate-stellaris-script.js"></script>
+</body>
+</html>
