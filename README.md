@@ -7,7 +7,6 @@ Site oficial do **iVilla**, empresa especializada em **assistência técnica de 
 
 ## 🌐 Acesse o site
 👉 [www.ivilla.com.br](https://www.ivilla.com.br)  
-*(ou substitua pelo link do GitHub Pages / domínio em uso)*
 
 ---
 
