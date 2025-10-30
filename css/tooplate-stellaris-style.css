@@ -730,6 +730,35 @@ https://www.tooplate.com/view/2140-stellaris-research
             font-weight: 500;
         }
 
+        /* Grid de serviços – adapta para cards clicáveis */
+        .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+        }
+
+        /* Tornar o card um link sem “cara” de link */
+        .service-card {
+        text-decoration: none;
+        color: inherit;
+        display: block;                /* garante o mesmo comportamento do <div> */
+        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+        }
+
+        /* Opcional: dar um destaque no hover, combinando com seu tema */
+        .service-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--solar-gold);
+        box-shadow: 0 0 28px rgba(245, 158, 11, 0.25);
+        }
+
+        /* Ícone um pouco maior */
+        .service-card .about-card-icon {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-bottom: .35rem;
+        }
+
         /* Mission Tabs Section */
         .missions-section {
             padding: 120px 0;
@@ -878,9 +907,6 @@ https://www.tooplate.com/view/2140-stellaris-research
             background: rgba(139, 92, 246, 0.1);
             border: 2px solid var(--galaxy-violet);
             border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: relative;
             transition: all 0.4s ease;
             cursor: pointer;
@@ -889,6 +915,32 @@ https://www.tooplate.com/view/2140-stellaris-research
             letter-spacing: 1px;
             text-transform: uppercase;
             text-align: center;
+        }
+
+        /* Link dentro do item */
+        .equipment-item a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            z-index: 2; /* Garante que o link fique acima */
+        }
+
+        .equipment-item img {
+            max-width: 70%;
+            max-height: 60%;
+            object-fit: contain;
+            margin-bottom: 8px;
+        }
+
+        .equipment-item span {
+            display: block;
+            padding: 0 10px;
         }
 
         .equipment-item::before {
@@ -901,6 +953,8 @@ https://www.tooplate.com/view/2140-stellaris-research
             opacity: 0;
             transition: all 0.4s ease;
             transform: scale(1.2);
+            z-index: 1; /* Fica atrás do link */
+            pointer-events: none; /* Não bloqueia cliques */
         }
 
         .equipment-item:hover {
